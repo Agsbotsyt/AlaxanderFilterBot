@@ -6,10 +6,59 @@ services:
     startCommand: python3 bot.py
     buildCommand: pip3 install -U -r requirements.txt
     repo: https://github.com/Agsbotsyt/AlaxanderFilterBot # optional
-    region: oregon # optional (defaults to oregon)
+    region: Agsbotsyt # optional (defaults to oregon)
     plan: free # optional (defaults to starter)
     branch: master # optional (defaults to master)
     numInstances: 1 # optional (defaults to 1)
     healthCheckPath: /
+    envVars:
+
+      - key: API_ID
+
+        sync: true
+
+      - key: API_HASH
+
+        sync: true
+
+      - key: BOT_TOKEN
+
+        sync: true
+
+      - key: ADMINS
+
+        sync: true
+
+      - key: DATABASE_URI
+
+        sync: true
+
+      - key: BOT_PICS
+
+        sync: true
+
+      - key: UPDATE_CHANNEL
+
+        sync: false
+
+      - key: SUPPORT_CHAT
+
+        sync: false
+
+      - key: AUTH_USERS
+
+        sync: false
+
+      - key: AUTH_CHANNEL
+
+        sync: false
+
+      - key: CHANNELS
+
+        sync: true
+
+      - key: LOG_CHANNEL 
+
+        sync: true
 
 #End of yaml
